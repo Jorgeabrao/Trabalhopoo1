@@ -9,7 +9,14 @@ public class Refeicao_real{
 	private double valor2;
 	private float avaliacao;
 	private String local;
+	private static Cliente cliente;
+	private static Refeicao refeicao;
 
+	// ***** CONSTRUTOR
+	public Refeicao_real(Cliente cliente, Refeicao refeicao){
+		this.cliente = cliente;
+		this.refeicao = refeicao;
+	}
 
 	// ***** GETTERS
 	public Calendar getDataDarefeicao(){
